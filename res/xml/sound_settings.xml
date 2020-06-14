@@ -118,6 +118,54 @@
         settings:controller="com.android.settings.notification.VibrateWhenRingPreferenceController"
         android:order="-130"/>
 
+    <!-- Ringtone vibration pattern -->
+    <ListPreference
+        android:key="vibration_pattern"
+        android:title="@string/vibration_pattern_title"
+        android:order="-125"
+        android:entries="@array/vibration_pattern_entries"
+        android:entryValues="@array/vibration_pattern_values"
+        android:dependency="vibrate_when_ringing"/>
+
+    <!-- Custom ringtone vibration pattern category -->
+    <PreferenceCategory
+        android:key="custom_vibration_pattern"
+        android:title="@string/custom_vibration_pattern_title"
+        android:order="-124"
+        android:visibility="gone">
+
+        <!-- Custom ringtone vibration pattern 1 -->
+        <com.derpquest.settings.preferences.CustomSeekBarPreference
+            android:key="custom_vibration_pattern1"
+            android:order="-123"
+            android:max="1000"
+            settings:min="0"
+            settings:interval="100"
+            settings:units="ms"
+            android:dependency="vibrate_when_ringing"/>
+
+        <!-- Custom ringtone vibration pattern 2 -->
+        <com.derpquest.settings.preferences.CustomSeekBarPreference
+            android:key="custom_vibration_pattern2"
+            android:order="-122"
+            android:max="1000"
+            settings:min="0"
+            settings:interval="100"
+            settings:units="ms"
+            android:dependency="vibrate_when_ringing"/>
+
+        <!-- Custom ringtone vibration pattern 3 -->
+        <com.derpquest.settings.preferences.CustomSeekBarPreference
+            android:key="custom_vibration_pattern3"
+            android:order="-121"
+            android:max="1000"
+            settings:min="0"
+            settings:interval="100"
+            settings:units="ms"
+            android:dependency="vibrate_when_ringing"/>
+
+    </PreferenceCategory>
+
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
         android:key="zen_mode"

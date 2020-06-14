@@ -60,7 +60,6 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right" product="tablet">Найдите датчик отпечатков пальцев на правой стороне планшета.</string>
     <!-- DerpQuest Settings strings -->
     <string name="derp_settings_title">DerpQuest</string>
-    <string name="derp_settings_summary">В Кроника мы верим...</string>
     <string name="derp_extras_qs_title">Быстрые настройки</string>
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
@@ -171,4 +170,13 @@
     <string name="data_usage_app_restrict_wifi_summary">Включить использование данных Wi\u2011Fi</string>
     <!-- Lock screen pattern size -->
     <string name="lock_settings_picker_pattern_size_message">Выберите размер узора</string>
+    <!-- Vibration patterns -->
+    <string name="vibration_pattern_title">Шаблон вибрации при вызове</string>
+    <string name="pattern_dzzz_dzzz">дззз-дззз</string>
+    <string name="pattern_dzzz_da">дззз-да</string>
+    <string name="pattern_mm_mm_mm">мм-мм-мм</string>
+    <string name="pattern_da_da_dzzz">да-да-дззз</string>
+    <string name="pattern_da_dzzz_da">да-дззз-да</string>
+    <string name="pattern_custom">Свой шаблон</string>
+    <string name="custom_vibration_pattern_title">Свой шаблон</string>
 </resources>
